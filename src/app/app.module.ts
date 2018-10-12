@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
 import { PizzaListComponent } from './pizza-list/pizza-list.component';
 import { PizzaDetailComponent } from './pizza-detail/pizza-detail.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PizzaDetailComponent } from './pizza-detail/pizza-detail.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule 
+    HttpClientModule,
+    AppRoutingModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
