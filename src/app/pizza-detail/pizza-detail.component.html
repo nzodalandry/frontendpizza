@@ -1,3 +1,9 @@
-<p>
-  pizza-detail works!
-</p>
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src={{pizza.url}} alt="Card image cap">
+    <div class="card-body">
+      <h1 class="card-title">{{pizza.name}}</h1>
+      <h3 class="card-text">{{pizza.price}} €</h3>
+      <a href="#" class="btn btn-primary" style="margin-right: 2%;">Commander</a>
+      <a routerLink="/pizza-list" class="btn btn-primary"> liste de pizzas</a>
+    </div>
+  </div>

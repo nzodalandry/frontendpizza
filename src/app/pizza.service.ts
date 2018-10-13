@@ -14,4 +14,7 @@ export class PizzaService {
   public listPizzas(): Observable<Pizza[]>{
     return this.httpclient.get<Pizza[]>(this.URL + '/pizzas.json')
   }
+  public showPizza(id:number): Observable<Pizza>{
+    return this.httpclient.get<Pizza>(this.URL + '/pizzas/'+id+'.json')
+  }
 }
